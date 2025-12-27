@@ -1,5 +1,5 @@
 import { type WatsonXAI } from "@ibm-cloud/watsonx-ai";
-import { type LanguageModelV1Prompt } from "ai";
+import { type LanguageModelV1Prompt } from "@ai-sdk/provider";
 
 export function convertToWatsonxChatMessages(prompt: LanguageModelV1Prompt) {
   return prompt.map((message) => {

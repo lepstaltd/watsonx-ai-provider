@@ -1,11 +1,11 @@
 {
   "name": "watsonx-ai-provider",
   "author": "IBM",
-  "version": "1.0.4",
+  "version": "2.0.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "license": "MIT",
-  "description": "watsonx.ai provider for Vercel AI SDK",
+  "description": "watsonx.ai provider for Vercel AI SDK v5+ (specification v2)",
   "keywords": [
     "ai",
     "ai sdk",
@@ -26,8 +26,13 @@
     "dist"
   ],
   "dependencies": {
-    "@ibm-cloud/watsonx-ai": "^1.6.4",
-    "ai": "^4.2.10"
+    "@ai-sdk/openai-compatible": "^0.0.7",
+    "@ai-sdk/provider": "^1.0.2",
+    "@ai-sdk/provider-utils": "^2.0.4",
+    "@ibm-cloud/watsonx-ai": "^1.6.4"
+  },
+  "peerDependencies": {
+    "ai": "^5.0.0"
   },
   "devDependencies": {
     "@types/node": "^22.13.17",

@@ -38,5 +38,13 @@ export type WatsonxChatModelId =
   | (string & {});
 
 export interface WatsonxChatSettings {
+  /**
+   * WatsonX-specific project ID
+   */
   projectId?: string;
+
+  /**
+   * Additional parameters for WatsonX chat models
+   */
+  [key: string]: any;
 }
